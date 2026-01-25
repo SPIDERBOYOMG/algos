@@ -10,6 +10,6 @@ for(int i=1; i<=n; i++){
 	was[v]=1;
 	
 	for(auto &[to, len]:g[v]){
-		dist[to]=max(dist[to], dist[v]*len);
+		dist[to]=max(dist[to], dist[v]+len);
 	}
 }
