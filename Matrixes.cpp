@@ -46,6 +46,7 @@ struct Matrix {
         if (cur == T(0)) continue;
         for (int j = 0; j < other.m; j++) {
           res(i, j) += cur * other(k, j);
+          res(i, j)%=MOD;
         }
       }
     }
@@ -71,4 +72,15 @@ Matrix<T> binpow(Matrix<T> a, long long k) {
   }
 
   return res;
+}
+
+template<typename T>
+void pprint(const Matrix<T> &a) {
+    for (int i = 0; i < a.n; i++) {
+        for (int j = 0; j < a.m; j++) {
+            cout << a(i, j) << ' ';
+        }
+        cout << '\n';
+    }
+    cout << '\n';
 }
