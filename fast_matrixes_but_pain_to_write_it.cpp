@@ -51,16 +51,6 @@ struct Vec{
 	}
 };
 
-Matrix binpow(Matrix a, long long k) {
-  Matrix res = Matrix::identity();
-  while (k > 0) {
-    if (k & 1) res *= a;
-    a *= a;
-    k >>= 1;
-  }
-  return res;
-}
-
 Vec mul(Vec B, Matrix A){
 	Vec res;
 	res(0)=(1ll*B(0)*A(0, 0)+1ll*B(1)*A(1, 0))%MOD;
