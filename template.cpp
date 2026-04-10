@@ -7,7 +7,7 @@
 #define s second
 #define pb push_back
 #define sz(x) (int)x.size()
-#define all(x) (x).begin(), (x).end()
+#define all(x) begin(x), end(x)
 using namespace std;
 using namespace __gnu_pbds;
 template<class T> using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
