@@ -17,8 +17,6 @@ void dfs(int v, int pr=0){
 	}
 	
 	tout[v]=++timer;
-	
-	debug(v, tin[v], tout[v]);
 }
 
 bool check(int u, int v){
