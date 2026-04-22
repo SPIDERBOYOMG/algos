@@ -76,7 +76,7 @@ void debug_out(string format, Head H, Tail... T) {
     debug_out(format, T...);
 }
 
-//#define LOCAL
+#define LOCAL
 #ifdef LOCAL
 #define debug(...) cout << "[" << #__VA_ARGS__ << "]\n", debug_out(#__VA_ARGS__, __VA_ARGS__)
 #else
