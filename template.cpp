@@ -80,12 +80,12 @@ void debug_out(string format, Head H, Tail... T) {
 #ifdef LOCAL
 #define debug(...) cout << "[" << #__VA_ARGS__ << "]\n", debug_out(#__VA_ARGS__, __VA_ARGS__)
 #else
-#define debug(...) 123
+#define debug(...) 67
 #endif
 
-const ll inf=1e14+5, mod=998244353, MOD=1e9+7;
+const ll inf=1e14+67, mod=998244353, MOD=1e9+7;
 const ll INF=1e18;
-const int maxn=2e5+123;
+const int maxn=2e5+67;
 
 const int RANDOM = chrono::high_resolution_clock::now().time_since_epoch().count();
 struct chash {
