@@ -31,6 +31,9 @@ string to_string(const char* s) {
 string to_string(bool b) {
   return (b ? "true" : "false");
 }
+string to_string(char v){
+	return {v};
+}
 string to_string(vector<bool> v) {
   bool first = true;
   string res = "{";
