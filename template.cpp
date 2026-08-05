@@ -115,7 +115,7 @@ void solve(){
 int main(){
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
     int ttt=1; cin>>ttt;
-    while(ttt--){
+    for(int tt=1; tt<=ttt; tt++){
     	solve();
     	cout<<"\n";
 //    	cout<<string(15, '-')<<"\n";
