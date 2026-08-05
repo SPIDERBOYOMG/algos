@@ -86,7 +86,7 @@ void debug_out(string format, Head H, Tail... T) {
 #define debug(...) 67
 #endif
 
-const ll inf=1e14+67, mod=998244353, MOD=1e9+7;
+const ll inf=1e12+67, mod=998244353, MOD=1e9+7;
 const ll INF=1e18;
 const int maxn=2e5+67;
 
